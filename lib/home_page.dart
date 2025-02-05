@@ -30,8 +30,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     elevation: WidgetStateProperty.all(4),
                   ),
                   onPressed: () {
-                    UrlLauncherService.launchWeb(
-                        'https://github.com/Legendary-Folah/MOBILE-DESKTOP-STAGE-0-TASK');
+                    UrlLauncherService().launchUrlNow(
+                      'https://github.com/Legendary-Folah/MOBILE-DESKTOP-STAGE-0-TASK',
+                    );
                   },
                   child: Text(
                     'Github Repository',
@@ -51,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     elevation: WidgetStateProperty.all(4),
                   ),
                   onPressed: () {
-                    UrlLauncherService.launchWeb(
+                    UrlLauncherService().launchUrlNow(
                         'https://hng.tech/hire/flutter-developers');
                   },
                   child: Text(

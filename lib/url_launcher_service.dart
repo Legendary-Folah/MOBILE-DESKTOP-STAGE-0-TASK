@@ -2,19 +2,16 @@ import 'package:url_launcher/url_launcher.dart';
 // import 'package:url_launcher/url_launcher_string.dart';
 
 class UrlLauncherService {
-  UrlLauncherService._();
+  // UrlLauncherService._();
 
-  static Future<void> launchWeb(String url) async {
+  Future<void> launchUrlNow(String url) async {
+    final Uri _url = Uri.parse(url);
     try {
-      final Uri uri = Uri.parse(url);
-      if (await canLaunchUrl(uri)) {
-        await launchUrl(uri);
-        print('Launched $uri');
-      } else {
-        throw 'error launching $url';
+      if (!await launchUrl(_url, mode: LaunchMode.externalApplication)) {
+        throw Exception('Could not launch $_url');
       }
     } catch (e) {
-      print('Error: $e');
+      print('Error : $e');
     }
   }
 }

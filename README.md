@@ -1,17 +1,34 @@
 # mobile_desktop_stage_0_task
 
-A new Flutter project.
+mobile_desktop_stage_0_task
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+Link to the github directory 
+ - https://github.com/Legendary-Folah/MOBILE-DESKTOP-STAGE-0-TASK
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+ This is a flutter application and works on Ios, android, web also.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ Clone the repo form github 
+  - git clone <repository_url>
+  - gti clone https://github.com/Legendary-Folah/MOBILE-DESKTOP-STAGE-0-TASK
+
+then navigate into the project folder
+ - cd MOBILE-DESKTOP-STAGE-0-TASK
+
+open the project on VsCode or Android studio
+
+install all dependencies
+ - flutter pub get
+
+connect a device or start an emulator and you can also connect your browser for web
+ - flutter devices
+
+connect to desired device and run the command 
+ - flutter run
+
+To build APk
+ - flutter build apk
+
 # MOBILE-DESKTOP-STAGE-0-TASK
